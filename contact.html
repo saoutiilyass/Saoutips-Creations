@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+header {
+    background-color: red;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: none;
+}
+main {
+    padding: 2rem;
+}
+.contact {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 2rem auto;
+}
+.contact h2 {
+    color: #4CAF50;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+.contact label {
+    margin: 0.5rem 0 0.2rem;
+}
+.contact input, .contact textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.contact button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contact button:hover {
+    background-color: red;
+}
+.social-media {
+    text-align: center;
+    margin: 2rem 0;
+}
+.social-media h2 {
+    color: #4CAF50;
+}
+.social-media ul {
+
+    list-style-type: none;
+    padding: 0;
+}
+.social-media li {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-media a {
+    text-decoration: none; /* Enlever les soulignements */
+    color: black; /* Couleur verte pour les liens */
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+.social-media a:hover {
+    color: red; /* Couleur rouge au survol */
+}
+.social-media img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
+footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0; /* Hauteur réduite */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+    </style>
+</head>
+<body>
+<div id="landscape-warning" style="display: none;">
+    <p>Veuillez tourner votre appareil en mode paysage pour accéder au site.</p>
+  </div>
+    <header>
+        <h1>Contact</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="gallery.html">Collection</a></li>
+                <li><a href="about.html">À propos de l'artiste</a></li>
+                <li><a href="limited.html">Les éditions limitées</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h2 style="text-align: center; color: red;">Prendre contact avec l'artiste</h2>
+
+
+            <form action="mailto:ilyasssaouti2001@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+        <section class="social-media">
+            <h2 style="text-align: center; color: red;">Rejoindre l'artiste sur les réseaux</h2>
+
+            <ul>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                    <a href="https://www.instagram.com/saoutiilya2s" target="_blank"> saoutiilya2s</a>
+                </li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                    <a href="https://www.facebook.com/ilyass.saouti.5" target="_blank">Ilyass Saouti</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Galerie d'Art Numérique. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+
